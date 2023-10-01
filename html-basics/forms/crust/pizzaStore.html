@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crust</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="branding-banner">
+            <a href="#" target="_blank"><img src="images/Crust logo.png" alt="logo of Crust's website" width="600px"
+                    height="160px"></a>
+
+        </div>
+
+        <div class="log-in" id="logIn">
+
+            <form action="#" method="get">
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" value="" size="10">
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" minlength="8"
+                        placeholder="At least 8 characters" size="16">
+                    <input type="submit" value="Log in">
+
+                </div>
+            </form>
+
+        </div>
+
+        <nav class="topnav">
+            <ul class="topnav-ul">
+                <li class="nav-li"><a href="#specialtyMenu">Menu</a></li>
+                <li class="nav-li"><a href="#media">Media</a></li>
+                <li class="nav-li"><a href="#getStarted">Order</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="search">
+            <input type="text" placeholder="Find a Location Near You">
+        </div>
+
+    </header>
+
+    <main>
+
+        <h2 class="subheading" id="specialtyMenu">Popular Menu Items</h2>
+        <ul id="pizzaDisplay">
+            <li class="samplemenu">
+                <a href="#getStarted">
+                    <figure>
+                        <h3>Khadijah James</h3>
+                        <p>Jerk Chicken Pizza</p>
+                </a><img src="images/Khadijahh.png" alt="Jerk Chicken Pizza"></a>
+                <figcaption>
+
+                </figcaption>
+                </figure>
+            </li>
+
+
+
+            <li class="samplemenu">
+                <a href="#getStarted">
+                    <figure>
+                        <h3>Real Regine</h3>
+                        <p>Curry Oxtail Pizza</p>
+                </a><img src="images/Regine.png" alt="Curry Oxtail Pizza" width="124px" height="117px"></a>
+                <figcaption>
+
+                </figcaption>
+                </figure>
+            </li>
+
+
+
+            <li class="samplemenu">
+                <a href="#getStarted">
+                    <figure>
+                        <h3>The Maxx Barker</h3>
+                        <p>Sweet Chilli Oxtail Pizza</p>
+                </a><img src="images/The Max Barker.png" alt="Sweet Chilli Oxtail Pizza" width="124px"
+                    height="117px"></a>
+                <figcaption>
+                </figcaption>
+                </figure>
+            </li>
+
+
+
+            <li class="samplemenu">
+                <a href="#getStarted">
+                    <figure>
+                        <h3>Woo Woo Woo</h3>
+                        <p>Sweet Chili Salmon Pizza</p>
+                        <img src="images/Woo Woo Woo.png" alt="Sweet Chili Salmon Pizza" width="124px" height="117px">
+                </a>
+                <figcaption>
+                </figcaption>
+                </figure>
+            </li>
+
+
+
+            <li class="samplemenu">
+                <a href="#getStarted">
+                    <figure>
+                        <h3>The Obie</h3>
+                        <p>Beef, Pepperoni, BBQ Chicken, & Pineapple Pizza</p>
+                        <img src="images/The Obie.png" alt="Hawaiian Pizza" width="124px" height="117px">
+                </a>
+            </li>
+            <figcaption>
+            </figcaption>
+            </figure>
+            </li>
+
+            <li id="byop">
+                <figure>
+                    <a href="#getStarted">
+                        <h3>Build Your Own Pizza</h3>
+                        <p>Make your pizza built to perfection.</p>
+                        <img src="images/Build-ur-own.png" alt="Build your own pizza" width="124px" height="117px">
+                        <figcaption>
+                        </figcaption>
+                    </a>
+                </figure>
+            </li>
+        </ul>
+
+
+        <h2 class="subheading" id="media">Media</h2>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/l0H8U6mdMwY"></iframe>
+
+
+
+        <section class="order">
+            <h1 class="order" id="getStarted">
+                Order Online
+            </h1>
+            <form action="#">
+                <div>
+                    <fieldset>
+                        <legend>Order Type</legend>
+                        <p class="order-type">Please select your order type</p>
+                        <label for="carryout">Carryout</label>
+                        <input type="radio" id="carryout" name="order-type">
+                        <label for="delivery">Delivery</label>
+                        <input type="radio" id="delivery" name="order-type">
+                    </fieldset>
+
+
+                    <fieldset>
+                        <legend>Store Locator</legend>
+                        <div>
+                            <p>Please enter your location details</p>
+                            <div>
+                                <label for="address">Address</label>
+                                <input type="search" id="address" name="address">
+                            </div>
+                            <p>Or</p>
+                            <label for="zip">Zip Code</label>
+                            <input type="search" id="zip" name="zip">
+                            <button>Find A Store </button>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            Your Order
+                        </legend>
+
+                        <fieldset>
+                            <h2>Select your Pizza</h2>
+                            <div>
+                                <label for="pizza"></label>
+                                <select name="pizza" id="pizza">
+                                    <option value="the-khadijah">Khadijah James</option>
+                                    <option value="the-maxx-barker">The Maxx Barker</option>
+                                    <option value="the-regine">Real Regine</option>
+                                    <option value="woo-woo-woo">Woo Woo Woo</option>
+                                    <option value="the-obie">The Obie</option>
+                                    <option value="build-your-own">Build Your Own</option>
+                                </select>
+
+                                <div>
+                                    <h2 class="subheading" id="specialtyMenu">Size</h2>
+                                    <ul id="pizzasizes">
+                                        <li class="pizza-sizes">
+                                            <figure>
+                                                <a href="#"><img src="images/small-pizza.png"
+                                                        alt="small sized pizza"></a>
+                                                <figcaption>
+                                                    <label for="size">$10.95</label>
+                                                    <input type="radio" name="size" id="size" value="small">
+
+
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                        <li class="pizza-sizes">
+                                            <figure>
+                                                <a href="#"><img src="images/med-pizza.png"
+                                                        alt="medium sized pizza"></a>
+                                                <figcaption>
+                                                    <label for="size">$18.50</label>
+                                                    <input type="radio" name="size" id="size" value="medium">
+
+                                                    </select>
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                        <li class="pizza-sizes">
+                                            <figure>
+                                                <a href="#"><img src="images/lrg-pizza.png" alt="large sized pizza"></a>
+                                                <figcaption>
+                                                    <label for="size">$22.50</label>
+                                                    <input type="radio" name="size" id="size" value="large">
+
+                                                </figcaption>
+                                            </figure>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+
+
+                            <h2>Type of Crust</h2>
+                            <div class="crust">
+                                <label for="thin">Thin</label>
+                                <input type="radio" id="thin" name="crustSelection" value="thin" required>
+                            </div>
+
+                            <div class="crust">
+                                <label for="thick">Thick</label>
+                                <input type="radio" id="thick" name="crustSelection" value="thick" required>
+                            </div>
+
+
+
+
+
+
+
+
+                            <div>
+
+
+
+
+                                <h2>Add Toppings</h2>
+
+                                <div class="toppings">
+
+                                    <div class="range">
+
+                                        <label for="basil">Basil</label>
+
+
+                                        <input type="range" min="0" max="4" steps="1" value="0">
+
+                                    </div>
+
+                                    <ul class="range-labels">
+
+                                        <li class="active selected">None</li>
+                                        <li>left half</li>
+                                        <li>right half</li>
+                                        <li>normal</li>
+                                    </ul>
+
+
+
+
+
+                                    <div class="range">
+
+                                        <label for="bacon">Bacon</label>
+
+                                        <input type="range" min="0" max="4" steps="1" value="0">
+
+                                    </div>
+
+                                    <ul class="range-labels">
+
+                                        <li class="active selected">None</li>
+                                        <li>left half</li>
+                                        <li>right half</li>
+                                        <li>normal</li>
+                                    </ul>
+
+
+
+                                    <div class="range">
+
+                                        <label for="cheddar">Cheddar</label>
+
+                                        <input type="range" min="0" max="4" steps="1" value="0">
+
+                                    </div>
+
+                                    <ul class="range-labels">
+
+                                        <li class="active selected">None</li>
+                                        <li>left half</li>
+                                        <li>right half</li>
+                                        <li>normal</li>
+                                    </ul>
+
+
+
+                                    <div class="range">
+
+                                        <label for="chicken">Chicken</label>
+
+                                        <input type="range" min="0" max="4" steps="1" value="0">
+
+                                    </div>
+
+                                    <ul class="range-labels">
+
+                                        <li class="active selected">None</li>
+                                        <li>left half</li>
+                                        <li>right half</li>
+                                        <li>normal</li>
+                                    </ul>
+
+
+
+                                    <div class="range">
+
+                                        <label for="green-peppers">Green Peppers</label>
+
+                                        <input type="range" min="0" max="4" steps="1" value="0">
+
+                                    </div>
+
+                                    <ul class="range-labels">
+
+                                        <li class="active selected">None</li>
+                                        <li>left half</li>
+                                        <li>right half</li>
+                                        <li>normal</li>
+                                    </ul>
+
+
+
+
+
+                                    <div class="range">
+
+                                        <label for="ham">Ham</label>
+
+                                        <input type="range" min="0" max="4" steps="1" value="0">
+
+                                    </div>
+
+                                    <ul class="range-labels">
+
+                                        <li class="active selected">None</li>
+                                        <li>left half</li>
+                                        <li>right half</li>
+                                        <li>normal</li>
+                                    </ul>
+
+
+
+
+
+                                    <div class="range">
+
+                                        <label for="jalapeno">Jalapeno</label>
+
+                                        <input type="range" min="0" max="4" steps="1" value="0">
+
+                                    </div>
+
+                                    <ul class="range-labels">
+
+                                        <li class="active selected">None</li>
+                                        <li>left half</li>
+                                        <li>right half</li>
+                                        <li>normal</li>
+                                    </ul>
+
+
+
+                                    <div class="range">
+
+                                        <label for="jerk-chicken">Jerk Chicken</label>
+
+                                        <input type="range" min="0" max="4" steps="1" value="0">
+
+                                    </div>
+
+                                    <ul class="range-labels">
+
+                                        <li class="active selected">None</li>
+                                        <li>left half</li>
+                                        <li>right half</li>
+                                        <li>normal</li>
+                                    </ul>
+
+
+
+                                    <div class="range">
+
+                                        <label for="mozzarella">Mozzarella</label>
+
+                                        <input type="range" min="0" max="4" steps="1" value="0">
+
+                                    </div>
+
+                                    <ul class="range-labels">
+
+                                        <li class="active selected">None</li>
+                                        <li>left half</li>
+                                        <li>right half</li>
+                                        <li>normal</li>
+                                    </ul>
+
+
+                                    <div class="range">
+
+                                        <label for="mushrooms">Mushrooms</label>
+
+                                        <input type="range" min="0" max="4" steps="1" value="0">
+
+                                    </div>
+
+                                    <ul class="range-labels">
+
+                                        <li class="active selected">None</li>
+                                        <li>left half</li>
+                                        <li>right half</li>
+                                        <li>normal</li>
+                                    </ul>
+
+
+
+
+                                    <div class="range">
+
+                                        <label for="onion">Onion</label>
+
+                                        <input type="range" min="0" max="4" steps="1" value="0">
+
+                                    </div>
+
+                                    <ul class="range-labels">
+
+                                        <li class="active selected">None</li>
+                                        <li>left half</li>
+                                        <li>right half</li>
+                                        <li>normal</li>
+                                    </ul>
+
+
+
+
+                                    <div class="range">
+
+                                        <label for="oxtails">Oxtails</label>
+
+                                        <input type="range" min="0" max="4" steps="1" value="0">
+
+                                    </div>
+
+                                    <ul class="range-labels">
+
+                                        <li class="active selected">None</li>
+                                        <li>left half</li>
+                                        <li>right half</li>
+                                        <li>normal</li>
+                                    </ul>
+
+
+
+
+                                    <div class="range">
+
+                                        <label for="pepperoni">Pepperoni</label>
+
+                                        <input type="range" min="0" max="4" steps="1" value="0">
+
+                                    </div>
+
+                                    <ul class="range-labels">
+
+                                        <li class="active selected">None</li>
+                                        <li>left half</li>
+                                        <li>right half</li>
+                                        <li>normal</li>
+                                    </ul>
+
+
+
+
+                                    <div class="range">
+
+                                        <label for="salmon">Salmon</label>
+
+                                        <input type="range" min="0" max="4" steps="1" value="0">
+
+                                    </div>
+
+                                    <ul class="range-labels">
+
+                                        <li class="active selected">None</li>
+                                        <li>left half</li>
+                                        <li>right half</li>
+                                        <li>normal</li>
+                                    </ul>
+
+
+
+
+                                    <div class="range">
+
+                                        <label for="sausage">Sausage</label>
+
+                                        <input type="range" min="0" max="4" steps="1" value="0">
+
+                                    </div>
+
+                                    <ul class="range-labels">
+
+                                        <li class="active selected">None</li>
+                                        <li>left half</li>
+                                        <li>right half</li>
+                                        <li>normal</li>
+                                    </ul>
+
+
+
+
+                                    <div class="range">
+
+                                        <label for="shrimp">Shrimp</label>
+
+                                        <input type="range" min="0" max="4" steps="1" value="0">
+
+                                    </div>
+
+                                    <ul class="range-labels">
+
+                                        <li class="active selected">None</li>
+                                        <li>left half</li>
+                                        <li>right half</li>
+                                        <li>normal</li>
+                                    </ul>
+
+
+
+
+                                    <div class="range">
+
+                                        <label for="spinach">Spinach</label>
+
+                                        <input type="range" min="0" max="4" steps="1" value="0">
+
+                                    </div>
+
+                                    <ul class="range-labels">
+
+                                        <li class="active selected">None</li>
+                                        <li>left half</li>
+                                        <li>right half</li>
+                                        <li>normal</li>
+                                    </ul>
+
+
+
+
+                                    <div class="range">
+
+                                        <label for="waffles">Waffles</label>
+
+                                        <input type="range" min="0" max="4" steps="1" value="0">
+
+                                    </div>
+
+                                    <ul class="range-labels">
+
+                                        <li class="active selected">None</li>
+                                        <li>left half</li>
+                                        <li>right half</li>
+                                        <li>normal</li>
+                                    </ul>
+
+                                </div>
+
+
+
+
+                                <div>
+
+                                    <h2>Quantity</h2>
+
+
+                                    <div>
+                                        <label for="quantity"></label>
+                                        <input type="number" name="quantity" id="quantity" required>
+                                    </div>
+                                </div>
+
+                                <div>
+
+                                    <button>Add to Cart</button>
+
+                                </div>
+
+                            <div >   
+
+                                <img src="images/Pizza Combo.png" alt="pepperoni pizza, garden salad, and two-liter coke" width="1200px;" height="630px">
+
+                                <div class="extras">
+
+                                    <fieldset>
+
+                                    <h2>Add Some Extras</h2>
+
+
+                                        <h3>Add a Salad </h3>
+                                        <img src="images/salad.png" alt="Salad" width="150px" height="143px">
+                                        <div>
+                                            <label for="side">Side $7.95</label>
+                                            <input type="radio" id="side" name="saladSize" value="side">
+                                        </div>
+
+                                        <div>
+                                            <label for="full">Full $11.95</label>
+                                            <input type="radio" id="full" name="saladSize" value="full">
+                                        </div>
+
+
+
+                                        <label for="dressing">Dressing</label>
+                                        <input type="text" list="dressings" id="dressing">
+
+                                        <small>Limit: Two per customer</small>
+
+                                        <datalist id="dressings">
+                                            <option value="Balsamic"></option>
+                                            <option value="Honey Vinagarette"></option>
+                                            <option value="Itallian"></option>
+                                            <option value="Ranch"></option>
+                                            <option value="Thousand Island"></option>
+
+                                        </datalist>
+
+                                        <div>
+
+                                            <button>Add to Cart</button>
+
+                                        </div>
+
+
+                                        <div>
+
+                                            <h3>Choose Your Drinks</h3>
+                                            <img src="images/Softdrink.png" alt="drink" width="150px" height="143px">
+                                            <div>
+                                                <label for="coke">2-Liter Coke $3.45</label>
+                                                <input type="text" name="coke" id="coke" size="3" value="">
+
+                                            </div>
+                                            <div>
+                                                <label for="sprite">2-Liter Sprite $3.45</label>
+                                                <input type="text" name="sprite" id="sprite" size="3" value="">
+
+                                            </div>
+
+                                            <div>
+                                                <label for="dietCoke">2-Liter Diet Coke $3.45</label>
+                                                <input type="text" name="dietCoke" id="dietCoke" size="3" value="">
+
+                                            </div>
+
+                                    
+
+                                        <button>Add to Cart</button>
+                                        </div>
+
+                                    
+                                        <div>
+
+                                
+
+                                
+                                            <h3>Choose Your Crust Dips</h3>
+                                            <img src="images/crust dips.png" alt="Pizza dipped in sauce" width="150px"
+                                                height="143px">
+
+                                            <div>
+
+                                                <label for="quantity">Flava $0.99</label>
+                                                <input type="text" name="quantity" id="flava" value="" max="10" step="1"
+                                                size="3">
+
+
+
+                                            </div>
+                                            <div>
+                                                <label for="woo-woo-woo">Woo Woo Woo $0.99</label>
+
+                                                <input type="text" name="quantity" id="woo-woo-woo" value="" max="10" step="1"
+                                                size="3">
+                                            </div>
+                                            <div>
+
+                                                <label for="heavyD">Heavy D $0.99</label>
+                                                <input type="text" name="quantity" id="heavyD" value="" max="10" step="1"
+                                                        size="3">
+                                        
+                                            </div>
+
+                                            <button>Add to Cart</button>
+                                    
+                                        
+                                    </div>
+
+                                    
+
+
+                                    
+
+                                </fieldset>
+
+                            </div> 
+
+
+
+
+
+
+
+
+
+
+                        </fieldset>
+
+                        <fieldset>
+                            <h2>Your Information</h2>
+                            <div>
+                                <div>
+
+                                    <a href="#logIn">Sign in for faster checkout.</a>
+                                </div>
+
+
+                                <div>
+
+                                    <label for="fName">First Name</label>
+                                    <input type="text" id="fName" name="fName" value="">
+
+                                    <label for="lName">Last Name</label>
+                                    <input type="text" id="lName" name="lName" value="">
+
+                                </div>
+
+                                <div>
+                                    <label for="streed-address">Street Address</label>
+                                    <input type="text" id="street-address" name="street-address" value="" size="70">
+
+                                </div>
+
+                                <div>
+                                    <label for="city">City</label>
+                                    <input type="text" id="city" name="city" value="" size="20">
+
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" list="states" name="state">
+
+                                    <datalist id="states">
+                                        <option value="Alabama"></option>
+                                        <option value="Alaska"></option>
+                                        <option value="Arizona"></option>
+                                        <option value="Arkansas"></option>
+                                        <option value="California"></option>
+                                        <option value="Colorado"></option>
+                                        <option value="Connecticut"></option>
+                                        <option value="Delaware"></option>
+                                        <option value="District of Columbia"></option>
+                                        <option value="Florida"></option>
+                                        <option value="Georgia"></option>
+                                        <option value="Hawaii"></option>
+                                        <option value="Idaho"></option>
+                                        <option value="Illinois"></option>
+                                        <option value="Indiana"></option>
+                                        <option value="Iowa"></option>
+                                        <option value="Kansas"></option>
+                                        <option value="Kentucky"></option>
+                                        <option value="Louisiana"></option>
+                                        <option value="Maine"></option>
+                                        <option value="Maryland"></option>
+                                        <option value="Massachusetts"></option>
+                                        <option value="Michigan"></option>
+                                        <option value="Minnesota"></option>
+                                        <option value="Mississippi"></option>
+                                        <option value="Missouri"></option>
+                                        <option value="Montana"></option>
+                                        <option value="Nebraska"></option>
+                                        <option value="Nevada"></option>
+                                        <option value="New Hampshire"></option>
+                                        <option value="New Jersey"></option>
+                                        <option value="New Mexico"></option>
+                                        <option value="New York"></option>
+                                        <option value="North Carolina"></option>
+                                        <option value="North Dakota"></option>
+                                        <option value="Ohio"></option>
+                                        <option value="Oklahoma"></option>
+                                        <option value="Oregon"></option>
+                                        <option value="Pennsylvania"></option>
+                                        <option value="Rhode Island"></option>
+                                        <option value="South Carolina"></option>
+                                        <option value="South Dakota"></option>
+                                        <option value="Tennessee"></option>
+                                        <option value="Texas"></option>
+                                        <option value="Utah"></option>
+                                        <option value="Vermont"></option>
+                                        <option value="Virginia"></option>
+                                        <option value="Washington"></option>
+                                        <option value="West Virginia"></option>
+                                        <option value="Wisconsin"></option>
+                                        <option value="Wyoming"></option>
+                                    </datalist>
+
+                                </div>
+
+                                <div>
+
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" value="" size="25">
+                                </div>
+
+                                <div>
+
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" id="phone" name="phone" value=""
+                                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                                    <small>Format: 555-555-5555</small>
+                                </div>
+
+
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <h2>Payment Information</h2>
+                            <div>
+                                <p>This store accepts Visa, Mastercard, AMEX, Discover, and Optima cards.</p>
+
+                                <div>
+
+                                    <label for="cardNumber">Card Number</label>
+                                    <input type="text" id="cardNumber" name="cardNumber" value="" size="30"
+                                        maxlength="19">
+                                </div>
+
+                                <div>
+
+                                    <label for="expirationDate">Expiration Date</label>
+                                    <input type="text" id="expirationDate" name="expirationDate" value="" size="6"
+                                        placeholder="MM/YY" required>
+
+                                    <label for="securityCode">Security Code</label>
+                                    <input type="text" id="securityCode" name="securityCode" value="" size="6" required
+                                        maxlength="3">
+                                </div>
+
+                                <div>
+
+                                    <label for="billingZipCode">Billing Zip Code</label>
+                                    <input type="text" id="billingZipCode" name="billingZipCode" value="" size="8"
+                                        maxlength="5">
+                                </div>
+
+
+                                <div class="requests">
+
+                                    <label for="specialInstructions">Delivery Instructions For Driver</label>
+
+                                    <textarea name="specialInstructions" id="specialInstructions" cols="100" rows="10"
+                                        placeholder="i.e (Gate codes, ring the doorbell, etc.)"></textarea>
+                                </div>
+
+
+                            </div>
+                        </fieldset>
+                        <div>
+
+                        </div>
+
+
+
+
+
+
+
+
+            </form>
+
+
+    </main>
+    <footer>
+        <div class="mailing-list">
+
+            <p> Stay in the know on all new menu items and special promotions. Subscribe to our mailing list. </p>
+
+            <div>
+
+                <form action="#" method="">
+                    <label for="name">Name</label>
+                    <input type="text" name="Name" id="name" value="">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" value="">
+
+                    <button>SUBSCRIBE</button>
+
+
+                </form>
+            </div>
+
+        </div>
+
+        <div class="store-hours">
+
+            
+            <h4 class="store-hours">HOURS</h4>
+            <ul class="store-hours">
+                <li class="store-hours-li">
+                    <p>MON - TH 12-10 PM</p>
+                </li>
+                <li class="store-hours-li">
+                    <p>FRI & SAT 12-11 PM</p>
+                </li>
+                <li class="store-hours-li">
+                    <p>SUN 12- 9 PM</p>
+                </li>
+                
+            </ul>
+        </div>
+
+
+
+        <div>
+
+            <p class="copywright"> 0llie's Place &copy; 2023 - All Rights Reserved</p>
+
+        </div>
+
+    </footer>
+</body>
+
+</html>
